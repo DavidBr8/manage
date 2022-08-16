@@ -1,3 +1,21 @@
+.wrap-in {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1110px;
+}
+
+.nav .nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+.nav .nav_items-logo {
+  background-image: url(../img/logoLG.png);
+  background-size: cover;
+}
+
 *,
 *::before,
 *::after {
@@ -11,11 +29,16 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  overflow: hidden;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
 .wrapper {
   position: relative;
+  margin: 0 auto;
   width: 100%;
-  max-width: 1920px;
-  overflow: hidden;
+  max-width: 1440px;
 }
 
 .pill {
@@ -29,4 +52,15 @@ html {
   background-color: #fff0ec;
   border-radius: 244px;
   z-index: -10;
+}
+
+@media (min-width: 768px) {
+  .pill {
+    top: -130px;
+    right: -750px;
+    width: 1300px;
+    height: 436px;
+    -webkit-transform: rotatez(-45deg);
+            transform: rotatez(-45deg);
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,6 @@
 @import './colors';
 @import './nav';
+
 *,
 *::before,
 *::after {
@@ -11,12 +12,15 @@
 html {
 	font-size: 62.5%;
 }
-
+body {
+	overflow: hidden;
+	font-family: 'Be Vietnam Pro', sans-serif;
+}
 .wrapper {
 	position: relative;
+	margin: 0 auto;
 	width: 100%;
-	max-width: 1920px;
-	overflow: hidden;
+	max-width: 1440px;
 }
 .pill {
 	position: absolute;
@@ -28,4 +32,14 @@ html {
 	background-color: $pillbg;
 	border-radius: 244px;
 	z-index: -10;
+}
+
+@media (min-width: 768px) {
+	.pill {
+		top: -130px;
+		right: -750px;
+		width: 1300px;
+		height: 436px;
+		transform: rotatez(-45deg);
+	}
 }
