@@ -1,3 +1,5 @@
+@import './colors';
+
 *,
 *::before,
 *::after {
@@ -8,4 +10,22 @@
 
 html {
 	font-size: 62.5%;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 1920px;
+	overflow: hidden;
+}
+.pill {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 542px;
+	height: 244px;
+	transform: rotatez(-45deg) translate(25%, 50%);
+	background-color: $pillbg;
+	border-radius: 244px;
+	z-index: -10;
 }

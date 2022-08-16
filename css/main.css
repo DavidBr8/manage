@@ -9,4 +9,24 @@
 
 html {
   font-size: 62.5%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  overflow: hidden;
+}
+
+.pill {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 542px;
+  height: 244px;
+  -webkit-transform: rotatez(-45deg) translate(25%, 50%);
+          transform: rotatez(-45deg) translate(25%, 50%);
+  background-color: #fff0ec;
+  border-radius: 244px;
+  z-index: -10;
 }/*# sourceMappingURL=main.css.map */
