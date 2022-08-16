@@ -6,7 +6,7 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
-	padding: 15px 15px;
+	padding: 1em;
 	display: inline-block;
 	cursor: pointer;
 	transition-property: opacity, filter;
@@ -32,8 +32,8 @@
 	background-color: #000;
 }
 .hamburger-box {
-	width: 40px;
-	height: 24px;
+	width: 25px;
+	height: 18px;
 	display: inline-block;
 	position: relative;
 }
@@ -41,15 +41,15 @@
 .hamburger-inner {
 	display: block;
 	top: 50%;
-	margin-top: -2px;
+	margin-top: -5px;
 }
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-	width: 40px;
+	width: 25px;
 	height: 4px;
 	background-color: #000;
-	border-radius: 4px;
+	border-radius: 0px;
 	position: absolute;
 	transition-property: transform;
 	transition-duration: 0.15s;
@@ -61,10 +61,10 @@
 	display: block;
 }
 .hamburger-inner::before {
-	top: -10px;
+	top: -8px;
 }
 .hamburger-inner::after {
-	bottom: -10px;
+	bottom: -8px;
 }
 
 /////////////////////////////////////////
