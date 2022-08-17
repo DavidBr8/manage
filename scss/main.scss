@@ -11,10 +11,8 @@
 
 html {
 	font-size: 62.5%;
-	// overflow: hidden;
 }
 body {
-	// overflow: hidden;
 	font-family: 'Be Vietnam Pro', sans-serif;
 }
 .wrapper {
@@ -22,7 +20,7 @@ body {
 	position: relative;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1440px;
+	max-width: 1920px;
 }
 .pill-one {
 	position: absolute;
@@ -48,7 +46,7 @@ body {
 @media (min-width: 1200px) {
 	.pill-one {
 		top: -100px;
-		right: -500px;
+		right: -260px;
 		width: 1300px;
 		height: 436px;
 		transform: rotatez(-45deg);
