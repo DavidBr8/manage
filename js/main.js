@@ -16,4 +16,3 @@ mobileNavItems.forEach((item) =>
 	})
 );
 navBtn.addEventListener('click', handleNav);
-console.log(mobileNavItems);

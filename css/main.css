@@ -1,4 +1,4 @@
-.wrap-in {
+.container {
   margin: 0 auto;
   width: 100%;
   max-width: 1110px;
@@ -19,9 +19,7 @@
 }
 
 .pageshadow-active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .nav__mobile {

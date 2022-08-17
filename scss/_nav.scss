@@ -1,4 +1,4 @@
-.wrap-in {
+.container {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1110px;
@@ -19,7 +19,7 @@
 	transition: opacity 0.3s;
 }
 .pageshadow-active {
-	display: flex;
+	display: block;
 }
 
 .nav {
