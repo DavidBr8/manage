@@ -1,6 +1,6 @@
 @import './colors';
 @import './nav';
-
+@import './header';
 *,
 *::before,
 *::after {
@@ -11,19 +11,20 @@
 
 html {
 	font-size: 62.5%;
-	overflow: hidden;
+	// overflow: hidden;
 }
 body {
-	overflow: hidden;
+	// overflow: hidden;
 	font-family: 'Be Vietnam Pro', sans-serif;
 }
 .wrapper {
+	overflow: hidden;
 	position: relative;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1440px;
 }
-.pill {
+.pill-one {
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -36,9 +37,18 @@ body {
 }
 
 @media (min-width: 768px) {
-	.pill {
-		top: -130px;
-		right: -750px;
+	.pill-one {
+		top: -50px;
+		right: -500px;
+		width: 1100px;
+		height: 300px;
+		transform: rotatez(-45deg);
+	}
+}
+@media (min-width: 1200px) {
+	.pill-one {
+		top: -100px;
+		right: -500px;
 		width: 1300px;
 		height: 436px;
 		transform: rotatez(-45deg);
