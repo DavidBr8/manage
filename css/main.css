@@ -5,7 +5,7 @@
 }
 
 .pageshadow {
-  position: absolute;
+  position: fixed;
   display: none;
   top: 0;
   left: 0;
@@ -23,7 +23,7 @@
 }
 
 .nav__mobile {
-  position: absolute;
+  position: fixed;
   display: none;
   top: 240px;
   left: 50vw;
@@ -253,6 +253,79 @@
   .header__items-text-heading {
     padding: 1em 0 0.5em 0;
     font-size: 5.6rem;
+  }
+}
+.highlights {
+  margin-top: 5em;
+  color: #242d52;
+}
+.highlights .container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1110px;
+  padding: 0 4em;
+}
+.highlights__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.highlights__items-main-heading {
+  font-size: 4rem;
+  line-height: 44px;
+}
+.highlights__items-main-p {
+  width: 60%;
+  padding-top: 1.5em;
+  font-size: 1.6rem;
+  line-height: 26px;
+  font-weight: 200;
+}
+.highlights__items-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+  width: 100%;
+}
+.highlights__items-points-point-indicator {
+  display: inline-block;
+  width: 67px;
+  height: 39px;
+  margin-right: 30px;
+  border-radius: 39px;
+  padding: 0.6em 1.5em;
+  background-color: #f3603c;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+}
+.highlights__items-points-point-heading {
+  display: inline;
+  font-size: 1.6rem;
+}
+.highlights__items-points-point-p {
+  padding-left: 100px;
+  padding-top: 1em;
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 26px;
+}
+
+@media (min-width: 1200px) {
+  .highlights .container {
+    padding: 0;
   }
 }
 *,

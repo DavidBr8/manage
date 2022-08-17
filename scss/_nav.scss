@@ -4,7 +4,7 @@
 	max-width: 1110px;
 }
 .pageshadow {
-	position: absolute;
+	position: fixed;
 	display: none;
 	top: 0;
 	left: 0;
@@ -24,7 +24,7 @@
 
 .nav {
 	&__mobile {
-		position: absolute;
+		position: fixed;
 		display: none;
 		top: 240px;
 		left: 50vw;
