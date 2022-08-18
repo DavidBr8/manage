@@ -70,6 +70,11 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 3em 2.5em 1em 2.5em;
+		transition: padding 0.3s;
+
+		&--scroll {
+			padding: 2em 2.5em 0.5em 2.5em !important;
+		}
 
 		.hamburger {
 			&-inner,
@@ -128,6 +133,9 @@
 			display: none;
 		}
 		&__items {
+			&--scroll {
+				padding: 2em 2.5em 2em 2.5em !important;
+			}
 			padding: 5em 1em 4em 1em;
 			&-logo {
 				margin-bottom: -10px;

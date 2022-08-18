@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -55,13 +56,15 @@
 
 
         <header class="header">
+            <div class="pill-mobile"></div>
             <div class="container">
 
                 <div class="header__items">
                     <div class="header__items-imgbox">
-                        <img class="header__items-image" src="./img/headerImg.png" alt="Diagrams">
+                        <img data-aos="zoom-in" data-aos-delay="300" class="header__items-image"
+                            src="./img/headerImg.png" alt="Diagrams">
                     </div>
-                    <div class="header__items-text">
+                    <div data-aos="zoom-in-right" class="header__items-text">
 
                         <h1 class="header__items-text-heading">
                             Bring everyone
@@ -80,50 +83,57 @@
 
             </div>
         </header>
+        <div class="wrapper">
+            <section class="highlights">
+                <div class="container">
 
-        <section class="highlights">
-            <div class="container">
+                    <div class="highlights__items">
+                        <div class="highlights__items-main">
 
-                <div class="highlights__items">
-                    <div class="highlights__items-main">
+                            <h2 class="highlights__items-main-heading">What’s different about Manage?</h2>
+                            <p class="highlights__items-main-p">Manage provides all the functionality your team needs,
+                                without the complexity. Our software is tailor-made for modern digital product teams.
+                            </p>
+                        </div>
 
-                        <h2 class="highlights__items-main-heading">What’s different about Manage?</h2>
-                        <p class="highlights__items-main-p">Manage provides all the functionality your team needs,
-                            without the complexity. Our software is tailor-made for modern digital product teams. </p>
+                        <div class="highlights__items-points">
+
+                            <div data-aos="fade-left" class="highlights__items-points-point">
+                                <span class="highlights__items-points-point-indicator">01</span>
+                                <h3 class="highlights__items-points-point-heading">Track company-wide progress</h3>
+                                <p class="highlights__items-points-point-p">See how your day-to-day tasks fit into the
+                                    wider
+                                    vision. Go from tracking progress at the milestone level all the way done to the
+                                    smallest of details. Never lose sight of the bigger picture again.</p>
+                            </div>
+                            <div data-aos="fade-left" class="highlights__items-points-point">
+                                <span class="highlights__items-points-point-indicator">02</span>
+                                <h3 class="highlights__items-points-point-heading">Advanced built-in reports</h3>
+                                <p class="highlights__items-points-point-p">Set internal delivery estimates and track
+                                    progress toward company goals. Our customisable dashboard helps you build out the
+                                    reports you need to keep key stakeholders informed.</p>
+                            </div>
+                            <div data-aos="fade-left" class="highlights__items-points-point">
+                                <span class="highlights__items-points-point-indicator">03</span>
+                                <h3 class="highlights__items-points-point-heading">Everything you need in one place</h3>
+                                <p class="highlights__items-points-point-p">Stop jumping from one service to another to
+                                    communicate, store files, track tasks and share documents. Manage offers an
+                                    all-in-one
+                                    team productivity solution.</p>
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div class="highlights__items-points">
-
-                        <div class="highlights__items-points-point">
-                            <span class="highlights__items-points-point-indicator">01</span>
-                            <h3 class="highlights__items-points-point-heading">Track company-wide progress</h3>
-                            <p class="highlights__items-points-point-p">See how your day-to-day tasks fit into the wider
-                                vision. Go from tracking progress at the milestone level all the way done to the
-                                smallest of details. Never lose sight of the bigger picture again.</p>
-                        </div>
-                        <div class="highlights__items-points-point">
-                            <span class="highlights__items-points-point-indicator">02</span>
-                            <h3 class="highlights__items-points-point-heading">Advanced built-in reports</h3>
-                            <p class="highlights__items-points-point-p">Set internal delivery estimates and track
-                                progress toward company goals. Our customisable dashboard helps you build out the
-                                reports you need to keep key stakeholders informed.</p>
-                        </div>
-                        <div class="highlights__items-points-point">
-                            <span class="highlights__items-points-point-indicator">03</span>
-                            <h3 class="highlights__items-points-point-heading">Everything you need in one place</h3>
-                            <p class="highlights__items-points-point-p">Stop jumping from one service to another to
-                                communicate, store files, track tasks and share documents. Manage offers an all-in-one
-                                team productivity solution.</p>
-                        </div>
-
-                    </div>
                 </div>
 
-            </div>
-        </section>
+            </section>
+        </div>
+
 
         <section class="reviews">
             <div class="container">
+                <div class="pill-second"></div>
                 <h1 class="reviews-header">What they’ve said</h1>
                 <!-- Slider main container -->
                 <div class="swiper mySwiper">
@@ -170,7 +180,7 @@
                 </div>
 
                 <div class="reviews__btnBox">
-                    <button class="reviews__btnBox-btn">Get Started</button>
+                    <button data-aos="zoom-in" class="reviews__btnBox-btn">Get Started</button>
                 </div>
             </div>
 
@@ -185,7 +195,7 @@
             <div class="pill"></div>
             <div class="pill-second"></div>
             <div class="bottomPanel__box">
-                <h2 class="bottomPanel__box-heading">Simplify how your team works today.</h2>
+                <h2 data-aos="zoom-in" class="bottomPanel__box-heading">Simplify how your team works today.</h2>
                 <button class="bottomPanel__box-btn">Get started</button>
             </div>
 
@@ -259,12 +269,15 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             loop: true,
             slidesPerView: 1,
             spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+            },
             breakpoints: {
                 640: {
                     slidesPerView: 1,
@@ -284,6 +297,7 @@
             },
         });
     </script>
+
     <script src="./js/main.js"></script>
 </body>
 
