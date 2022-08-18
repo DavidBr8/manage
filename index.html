@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -118,6 +119,59 @@
 
             </div>
         </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h1 class="reviews-header">What they’ve said</h1>
+                <!-- Slider main container -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="reviews__box">
+                                <img class="reviews__box-img" src="./img/r1.png" alt="Woman portrait">
+                                <h3 class="reviews__box-name">Anisha Li</h3>
+                                <p class="reviews__box-review"> “Manage has supercharged our team’s workflow. The
+                                    ability to maintain visibility on larger milestones at all times keeps everyone
+                                    motivated.”</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__box">
+                                <img class="reviews__box-img" src="./img/r2.png" alt="Woman portrait">
+                                <h3 class="reviews__box-name">Ali Bravo</h3>
+                                <p class="reviews__box-review">“We have been able to cancel so many other subscriptions
+                                    since using Manage. There is no more cross-channel confusion and everyone is much
+                                    more focused.”</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__box">
+                                <img class="reviews__box-img" src="./img/r3.png" alt="Man poortrait">
+                                <h3 class="reviews__box-name">Richard Watts</h3>
+                                <p class="reviews__box-review">“Manage allows us to provide structure and process. It
+                                    keeps us organized and focused. I can’t stop recommending them to everyone I talk
+                                    to!”</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__box">
+                                <img class="reviews__box-img" src="./img/r4.png" alt="Woman portrait">
+                                <h3 class="reviews__box-name">Shanai Gough</h3>
+                                <p class="reviews__box-review">“Their software allows us to track, manage and
+                                    collaborate on our projects from anywhere. It keeps the whole team in-sync without
+                                    being intrusive.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <button class="reviews-btn">Get Started</button> -->
+
+            </div>
+
+
+        </section>
         <br>
         <br>
         <br>
@@ -155,6 +209,31 @@
 
 
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
     <script src="./js/main.js"></script>
 </body>
 
