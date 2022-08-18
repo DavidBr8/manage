@@ -16,13 +16,15 @@
 </head>
 
 <body>
+    <div class="pageshadow"></div>
+
     <div class="wrapper">
 
         <div class="pill-one"></div>
 
-        <div class="container">
 
-            <nav class="nav">
+        <nav class="nav">
+            <div class="container">
                 <div class="nav__items">
                     <a href="index.html"><img class="nav__items-logo" src="./img/logoLG.png" alt="Logo"></a>
                     <div class="nav__items-links">
@@ -48,9 +50,9 @@
                         <a class="nav__mobile-items-link" href="#">Community</a>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-        </div>
 
         <header class="header">
             <div class="container">
@@ -164,6 +166,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
 
                 <div class="reviews__btnBox">
@@ -173,6 +176,13 @@
 
 
         </section>
+
+
+
+
+
+
+
         <br>
         <br>
         <br>
@@ -205,11 +215,11 @@
         <br>
 
     </div>
-    <div class="pageshadow"></div>
 
 
 
-    </div>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -232,6 +242,9 @@
                     slidesPerView: 3,
                     spaceBetween: 30,
                 },
+            },
+            pagination: {
+                el: ".swiper-pagination",
             },
         });
     </script>
