@@ -7,7 +7,7 @@
 		max-width: 1110px;
 	}
 
-	&__columns {
+	.footer__columns {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -113,7 +113,7 @@
 		}
 	}
 
-	&__mobileRights {
+	.footer__mobileRights {
 		font-size: 1.3rem;
 		color: grey;
 		text-align: center;
@@ -123,7 +123,7 @@
 
 @media (min-width: 768px) {
 	.footer {
-		&__columns {
+		.footer__columns {
 			&--logo {
 				order: 1;
 			}
@@ -156,7 +156,7 @@
 				}
 			}
 		}
-		&__mobileRights {
+		.footer__mobileRights {
 			display: none;
 		}
 	}

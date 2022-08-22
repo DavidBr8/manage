@@ -35,7 +35,7 @@
 		opacity: 0.08;
 	}
 
-	&__box {
+	.bottomPanel__box {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -74,7 +74,7 @@
 		.pill-second {
 			display: block;
 		}
-		&__box {
+		.bottomPanel__box {
 			flex-direction: row;
 
 			&-heading {
