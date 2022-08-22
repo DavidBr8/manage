@@ -640,6 +640,7 @@
 .bottomPanel .bottomPanel__box-heading {
   padding: 1.5em 0 0.7em 0;
   font-size: 4rem;
+  font-weight: 600;
   color: white;
 }
 .bottomPanel .bottomPanel__box-btn {
