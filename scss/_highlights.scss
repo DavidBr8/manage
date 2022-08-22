@@ -7,7 +7,7 @@
 		max-width: 1110px;
 		padding: 0 1.5em;
 	}
-	&__items {
+	.highlights__items {
 		display: flex;
 		flex-direction: column;
 		column-gap: 0;
@@ -82,7 +82,7 @@
 		.container {
 			padding: 0 3em;
 		}
-		&__items {
+		.highlights__items {
 			&-points {
 				&-point {
 					&-heading {
@@ -100,7 +100,7 @@
 		.container {
 			padding: 0 4em;
 		}
-		&__items {
+		.highlights__items {
 			flex-direction: row;
 			&-main {
 				text-align: left;
@@ -131,7 +131,7 @@
 
 @media (min-width: 992px) {
 	.highlights {
-		&__items {
+		.highlights__items {
 			column-gap: 30px;
 			&-main {
 				&-heading {
@@ -148,7 +148,7 @@
 				&-point {
 					&-indicator {
 						margin-right: 30px;
-					}
+					}.highlights__items
 					&-p {
 						padding-left: 100px;
 					}
