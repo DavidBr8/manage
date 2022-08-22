@@ -1,4 +1,30 @@
 const handlePage = () => {
+	var swiper = new Swiper('.mySwiper', {
+		loop: true,
+		slidesPerView: 1,
+		spaceBetween: 20,
+		autoplay: {
+			delay: 3000,
+		},
+		breakpoints: {
+			640: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 15,
+			},
+			1024: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+			},
+		},
+		pagination: {
+			el: '.swiper-pagination',
+		},
+	});
+
 	const navBtn = document.querySelector('.hamburger');
 	const mobileNav = document.querySelector('.nav__mobile');
 	const shadowHandle = document.querySelector('.pageshadow');
