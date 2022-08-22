@@ -32,7 +32,7 @@
 	&--scroll {
 		background-color: white;
 	}
-	&__mobile {
+	.nav__mobile {
 		position: fixed;
 		display: none;
 		top: 240px;
@@ -65,7 +65,7 @@
 		display: flex;
 	}
 
-	&__items {
+	.nav__items {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -132,7 +132,7 @@
 		.hamburger {
 			display: none;
 		}
-		&__items {
+		.nav__items {
 			&--scroll {
 				padding: 2em 2.5em 2em 2.5em !important;
 			}
