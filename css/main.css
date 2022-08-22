@@ -327,6 +327,16 @@
   row-gap: 10em;
   color: #242d52;
 }
+.highlights .highlights__items .sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 100px;
+}
+.highlights .highlights__items .sticky:before,
+.highlights .highlights__items .sticky:after {
+  content: "";
+  display: table;
+}
 .highlights .highlights__items-main {
   text-align: center;
 }
@@ -451,7 +461,7 @@
   .highlights .highlights__items-points-point-indicator {
     margin-right: 30px;
   }
-  .highlights__items .highlights .highlights__items-points-point-p {
+  .highlights .highlights__items-points-point-p {
     padding-left: 100px;
   }
 }

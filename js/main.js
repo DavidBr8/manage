@@ -66,6 +66,9 @@ const handlePage = () => {
 	navBtn.addEventListener('click', handleNav);
 	window.addEventListener('scroll', handleScroll);
 	AOS.init();
+
+	Stickyfill.forceSticky();
+	Stickyfill.add(document.querySelectorAll('.sticky'));
 };
 
 handlePage();

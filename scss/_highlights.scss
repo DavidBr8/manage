@@ -13,6 +13,16 @@
 		column-gap: 0;
 		row-gap: 10em;
 		color: $txtcolor;
+		.sticky {
+			position: sticky;
+			position: -webkit-sticky;
+			top: 100px;
+		}
+		.sticky:before,
+		.sticky:after {
+			content: '';
+			display: table;
+		}
 		&-main {
 			text-align: center;
 			&-heading {
@@ -148,7 +158,7 @@
 				&-point {
 					&-indicator {
 						margin-right: 30px;
-					}.highlights__items
+					}
 					&-p {
 						padding-left: 100px;
 					}
