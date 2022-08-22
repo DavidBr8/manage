@@ -26,13 +26,13 @@
 		}
 	}
 	color: $txtcolor;
-	&-header {
+	.reviews-header {
 		font-size: 3.5rem;
 		font-weight: 700;
 		text-align: center;
 	}
 
-	&__box {
+	.reviews__box {
 		position: relative;
 		background-color: #fafafa;
 		text-align: center;
@@ -57,7 +57,7 @@
 			line-height: 26px;
 		}
 	}
-	&__btnBox {
+	.reviews__btnBox {
 		text-align: center;
 		padding-bottom: 10em;
 		padding-top: 5em;
@@ -97,7 +97,7 @@
 			}
 		}
 
-		&__btnBox {
+		.reviews__btnBox {
 			padding-top: 1em;
 		}
 		.pill-second {
@@ -107,7 +107,7 @@
 }
 @media (min-width: 992px) {
 	.reviews {
-		&-header {
+		.reviews-header {
 			font-size: 4.4rem;
 		}
 	}
