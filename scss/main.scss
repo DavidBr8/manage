@@ -27,17 +27,17 @@ body {
 	width: 100%;
 	max-width: 1920px;
 }
-.pill-one {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 542px;
-	height: 244px;
-	transform: rotatez(-45deg) translate(25%, 50%);
-	background-color: $pillbg;
-	border-radius: 244px;
-	z-index: -10;
-}
+// .pill-one {
+// 	position: absolute;
+// 	top: 0px;
+// 	right: 0px;
+// 	width: 542px;
+// 	height: 244px;
+// 	transform: rotatez(-45deg) translate(25%, 50%);
+// 	background-color: $pillbg;
+// 	border-radius: 244px;
+// 	z-index: -10;
+// }
 
 @media (min-width: 768px) {
 	.pill-one {

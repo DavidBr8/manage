@@ -53,7 +53,8 @@
 		&-review {
 			padding: 0 1em 2em 1em;
 			font-size: 1.6rem;
-			font-weight: 100;
+			font-weight: 400;
+			opacity: 0.45;
 			line-height: 26px;
 		}
 	}
@@ -64,11 +65,13 @@
 		&-btn {
 			padding: 1em 2.5em;
 			border: none;
+			font-size: 1.3rem;
 			color: white;
-			font-weight: 600;
+			font-weight: 500;
 			border-radius: 20px;
 			background-color: $secondary-color;
 			transition: opacity 0.3s;
+			text-decoration: none;
 			box-shadow: 0px 4px 4px rgba(66, 68, 90, 0.25);
 			cursor: pointer;
 			&:hover {
