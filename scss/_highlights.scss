@@ -1,11 +1,11 @@
 .highlights {
-	margin-top: 10em;
 	position: relative;
+	padding-right: 1.5em;
 	.container {
 		margin: 0 auto;
 		width: 100%;
 		max-width: 1110px;
-		padding: 0 1.5em;
+		padding: 0 0 0 1.5em;
 	}
 	.highlights__items {
 		display: flex;
@@ -26,8 +26,9 @@
 		&-main {
 			text-align: center;
 			&-heading {
-				font-size: 3.5rem;
+				font-size: 3rem;
 				line-height: 44px;
+				font-weight: 900;
 			}
 			&-p {
 				width: 100%;
@@ -40,6 +41,7 @@
 		}
 
 		&-points {
+			overflow: hidden;
 			display: flex;
 			flex-direction: column;
 			row-gap: 5em;
@@ -80,6 +82,7 @@
 				}
 				&-p {
 					padding-top: 1em;
+					padding-right: 1em;
 					font-size: 1.6rem;
 					font-weight: 400;
 					opacity: 0.6;
@@ -93,7 +96,7 @@
 @media (min-width: 576px) {
 	.highlights {
 		.container {
-			padding: 0 3em;
+			padding: 0 0 0 3em;
 		}
 		.highlights__items {
 			&-points {
@@ -135,6 +138,7 @@
 					}
 					&-p {
 						padding-left: 80px;
+						padding-right: 0;
 					}
 				}
 			}
@@ -149,6 +153,7 @@
 			&-main {
 				&-heading {
 					font-size: 4rem;
+					font-weight: 600;
 				}
 				&-p {
 					width: 60%;

@@ -65,10 +65,8 @@ const handlePage = () => {
 	handleCurrentYear();
 	navBtn.addEventListener('click', handleNav);
 	window.addEventListener('scroll', handleScroll);
+	shadowHandle.addEventListener('click', handleNav);
 	AOS.init();
-
-	Stickyfill.forceSticky();
-	Stickyfill.add(document.querySelectorAll('.sticky'));
 };
 
 handlePage();
