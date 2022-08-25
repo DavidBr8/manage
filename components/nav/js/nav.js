@@ -12,6 +12,19 @@ const navHandle = () => {
 		mobileNav.classList.toggle('--active');
 		shadowHandle.classList.toggle('pageshadow-active');
 		bodyScroll.classList.toggle('scroll--off');
+
+		if (navBtn.classList.contains('is-active')) {
+			window.history.pushState(0, null, null);
+		} else {
+			window.history.replaceState(0, null, null);
+		}
+	};
+
+	const menuCloseOnBack = () => {
+		if (history.state == 0) {
+			// window.history.forward();
+			handleNav();
+		} else return;
 	};
 
 	const handleScroll = () => {
@@ -36,6 +49,9 @@ const navHandle = () => {
 	navBtn.addEventListener('click', handleNav);
 	window.addEventListener('scroll', handleScroll);
 	shadowHandle.addEventListener('click', handleNav);
+	window.addEventListener('popstate', menuCloseOnBack);
 };
-
+// addEventListener('DOMContentLoaded', () => {
+// 	window.history.replaceState(0, null, null);
+// });
 navHandle();
