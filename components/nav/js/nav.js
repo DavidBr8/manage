@@ -3,7 +3,7 @@ const navHandle = () => {
 	const bodyScroll = document.querySelector('.scroll');
 	const mobileNav = document.querySelector('.nav__mobile');
 	const shadowHandle = document.querySelector('.pageshadow');
-	const mobileNavItems = document.querySelectorAll('.nav__mobile-items-link');
+	const mobileNavItems = document.querySelectorAll('.nav__mobile-link');
 	const navScrollHandle = document.querySelector('.nav');
 	const navScrollPadding = document.querySelector('.nav__items');
 
@@ -16,15 +16,17 @@ const navHandle = () => {
 		if (navBtn.classList.contains('is-active')) {
 			window.history.pushState(0, null, null);
 		} else {
-			window.history.replaceState(0, null, null);
+			window.history.replaceState(10, null, null);
 		}
 	};
 
 	const menuCloseOnBack = () => {
-		if (history.state == 0) {
-			// window.history.forward();
-			handleNav();
-		} else return;
+		if (history.state == 10) {
+			navBtn.classList.remove('is-active');
+			mobileNav.classList.remove('--active');
+			shadowHandle.classList.remove('pageshadow-active');
+			bodyScroll.classList.remove('scroll--off');
+		}
 	};
 
 	const handleScroll = () => {
@@ -51,7 +53,7 @@ const navHandle = () => {
 	shadowHandle.addEventListener('click', handleNav);
 	window.addEventListener('popstate', menuCloseOnBack);
 };
-// addEventListener('DOMContentLoaded', () => {
-// 	window.history.replaceState(0, null, null);
-// });
+addEventListener('DOMContentLoaded', () => {
+	window.history.replaceState(10, null, null);
+});
 navHandle();
