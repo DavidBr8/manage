@@ -95,6 +95,10 @@
 			z-index: 10;
 		}
 
+		&-logo {
+			object-fit: cover;
+		}
+
 		&-links {
 			display: none;
 			gap: 30px;

@@ -234,6 +234,10 @@
 .nav .nav__items .hamburger-inner, .nav .nav__items .hamburger-inner::before, .nav .nav__items .hamburger-inner::after {
   background-color: #242d52;
 }
+.nav .nav__items-logo {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .nav .nav__items-links {
   display: none;
   gap: 30px;
