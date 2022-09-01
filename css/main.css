@@ -160,29 +160,16 @@
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
-.nav .container {
+.nav .nav-container {
   margin: 0 auto;
   width: 100%;
   max-width: 1110px;
+  padding: 3em 2em 1em 2em;
+  -webkit-transition: padding 0.2s;
+  transition: padding 0.2s;
 }
 .nav--scroll {
   background-color: white;
-}
-@-webkit-keyframes slidein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes slidein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 .nav .nav__mobile {
   position: absolute;
@@ -236,12 +223,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3em 2.5em 1em 2.5em;
-  -webkit-transition: padding 0.2s;
-  transition: padding 0.2s;
 }
 .nav .nav__items--scroll {
-  padding: 2em 2.5em 0.5em 2.5em !important;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
 }
 .nav .nav__items .hamburger {
   z-index: 10;
@@ -294,15 +279,16 @@
   opacity: 0.7;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
+  .nav .nav__items--scroll {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+  }
+  .nav .nav-container {
+    padding: 5em 4em 4em 4em;
+  }
   .nav .hamburger {
     display: none;
-  }
-  .nav .nav__items {
-    padding: 5em 1em 4em 1em;
-  }
-  .nav .nav__items--scroll {
-    padding: 2em 1em !important;
   }
   .nav .nav__items-logo {
     margin-bottom: -10px;
@@ -316,6 +302,11 @@
     display: block;
   }
 }
+@media (min-width: 1200px) {
+  .nav .nav-container {
+    padding: 5em 0 4em 0;
+  }
+}
 .header {
   margin-bottom: 5em;
   margin-top: 100px;
@@ -324,7 +315,7 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1110px;
-  padding: 0 1em;
+  padding: 0 2em;
 }
 .header .header__items {
   display: -webkit-box;
@@ -490,13 +481,12 @@
 }
 .highlights {
   position: relative;
-  padding-right: 1.5em;
 }
 .highlights .container {
   margin: 0 auto;
   width: 100%;
   max-width: 1110px;
-  padding: 0 0 0 1.5em;
+  padding: 0 0 0 2em;
 }
 .highlights .highlights__items {
   display: -webkit-box;
@@ -516,11 +506,6 @@
   position: sticky;
   position: -webkit-sticky;
   top: 100px;
-}
-.highlights .sticky:before,
-.highlights .sticky:after {
-  content: "";
-  display: table;
 }
 .highlights .highlights__main {
   text-align: center;
@@ -574,7 +559,7 @@
   position: absolute;
   top: -10px;
   bottom: -10px;
-  right: -600px;
+  right: -500px;
   left: -79px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -584,7 +569,7 @@
 }
 .highlights .highlights__point-p {
   padding-top: 1em;
-  padding-right: 1em;
+  padding-right: 2em;
   font-size: 1.4rem;
   font-weight: 400;
   opacity: 0.6;
@@ -675,14 +660,19 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px;
   padding-top: 10em;
 }
 .reviews .sw-wrapper {
+  width: 100%;
   overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .reviews .swiper {
   padding: 10em 2em 5em 2em;
+  max-width: 1620px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 .reviews .swiper-pagination {
   display: block;
@@ -787,12 +777,6 @@
     font-weight: 600;
   }
 }
-@media (min-width: 1024px) {
-  .reviews .swiper {
-    width: 120%;
-    left: -10%;
-  }
-}
 @media (min-width: 1200px) {
   .reviews .pill-second {
     width: 1300px;
@@ -800,7 +784,6 @@
   }
 }
 .bottomPanel {
-  padding: 2em 0 6em 0;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -809,7 +792,7 @@
 }
 .bottomPanel .container {
   position: relative;
-  padding: 0 1em;
+  padding: 9em 2em;
   margin: 0 auto;
   width: 100%;
   max-width: 1110px;
@@ -855,9 +838,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  row-gap: 3em;
 }
 .bottomPanel .bottomPanel__box-heading {
-  padding: 1.5em 0 0.7em 0;
   font-size: 4rem;
   font-weight: 600;
   color: white;
@@ -886,6 +869,9 @@
     padding: 0;
     text-align: left;
   }
+  .bottomPanel .container {
+    padding: 4em 4em;
+  }
   .bottomPanel .pill {
     top: 150px;
     left: -300px;
@@ -911,9 +897,9 @@
 }
 .footer {
   background-color: #1d1e25;
-  padding: 5em 1em 2em 1em;
 }
 .footer .container {
+  padding: 5em 4em 2em 4em;
   margin: 0 auto;
   width: 100%;
   max-width: 1110px;
@@ -1082,6 +1068,9 @@
 }
 
 @media (min-width: 768px) {
+  .footer .container {
+    padding: 5em 4em;
+  }
   .footer .footer__columns {
     row-gap: 0em;
     -webkit-box-orient: horizontal;
@@ -1130,7 +1119,7 @@
   }
 }
 @media (min-width: 1200px) {
-  .footer {
+  .footer .container {
     padding: 5em 0;
   }
 }
