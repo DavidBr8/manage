@@ -4,7 +4,7 @@
 		margin: 0 auto;
 		width: 100%;
 		max-width: 1110px;
-		padding: 0 2em 0 2em;
+		padding: 0 var(--horizontal-padding);
 	}
 	.highlights__items {
 		display: flex;
@@ -93,10 +93,6 @@
 
 @media (min-width: 576px) {
 	.highlights {
-		.container {
-			padding: 0 0 0 3em;
-		}
-
 		.highlights__main {
 			&-p {
 				font-size: 1.6rem;
@@ -117,10 +113,6 @@
 @media (min-width: 868px) {
 	.highlights {
 		margin-top: 5em;
-
-		.container {
-			padding: 0 4em;
-		}
 
 		.highlights__items {
 			flex-direction: row;
@@ -186,14 +178,6 @@
 			&-p {
 				padding-left: 100px;
 			}
-		}
-	}
-}
-
-@media (min-width: 1200px) {
-	.highlights {
-		.container {
-			padding: 0;
 		}
 	}
 }

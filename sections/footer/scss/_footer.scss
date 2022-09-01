@@ -2,7 +2,7 @@
 	background-color: $footer-color;
 
 	.container {
-		padding: 5em 4em 2em 4em;
+		padding: 5em var(--horizontal-padding);
 		margin: 0 auto;
 		width: 100%;
 		max-width: 1110px;
@@ -132,10 +132,6 @@
 
 @media (min-width: 768px) {
 	.footer {
-		.container {
-			padding: 5em 4em;
-		}
-
 		.footer__columns {
 			&--logo {
 				order: 1;
@@ -174,13 +170,6 @@
 		}
 		.footer__mobileRights {
 			display: none;
-		}
-	}
-}
-@media (min-width: 1200px) {
-	.footer {
-		.container {
-			padding: 5em 0;
 		}
 	}
 }

@@ -16,12 +16,24 @@
 
 html {
 	font-size: 62.5%;
-	max-width: 100vw !important;
+	// max-width: 100vw !important;
 }
 
 body {
 	font-family: 'Be Vietnam Pro', sans-serif;
 	max-width: 100vw !important;
+}
+
+.home-page {
+	--horizontal-padding: 20px;
+
+	@media (min-width: 768px) {
+		--horizontal-padding: 40px;
+	}
+
+	@media (min-width: 1200px) {
+		--horizontal-padding: 0px;
+	}
 }
 
 .wrapper {

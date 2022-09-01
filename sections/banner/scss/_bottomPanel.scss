@@ -7,7 +7,7 @@
 	text-align: center;
 	.container {
 		position: relative;
-		padding: 9em 2em;
+		padding: 9em var(--horizontal-padding);
 		margin: 0 auto;
 		width: 100%;
 		max-width: 1110px;
@@ -73,11 +73,12 @@
 
 @media (min-width: 768px) {
 	.bottomPanel {
-		.container {
-			padding: 4em 4em;
-		}
 		padding: 0;
 		text-align: left;
+		.container {
+			padding-top: 4em;
+			padding-bottom: 4em;
+		}
 
 		.pill {
 			top: 150px;
@@ -102,7 +103,8 @@
 @media (min-width: 1200px) {
 	.bottomPanel {
 		.container {
-			padding: 0;
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 	}
 }

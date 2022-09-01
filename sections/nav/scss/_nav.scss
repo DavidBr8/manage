@@ -34,7 +34,7 @@
 		margin: 0 auto;
 		width: 100%;
 		max-width: 1110px;
-		padding: 3em 2em 1em 2em;
+		padding: 3em var(--horizontal-padding) 1em var(--horizontal-padding);
 		transition: padding 0.2s;
 	}
 
@@ -151,7 +151,8 @@
 			padding-bottom: 2em !important;
 		}
 		.nav-container {
-			padding: 5em 4em 4em 4em;
+			padding-top: 5em;
+			padding-bottom: 4em;
 		}
 		.hamburger {
 			display: none;
@@ -167,14 +168,6 @@
 			&-btn {
 				display: block;
 			}
-		}
-	}
-}
-
-@media (min-width: 1200px) {
-	.nav {
-		.nav-container {
-			padding: 5em 0 4em 0;
 		}
 	}
 }
